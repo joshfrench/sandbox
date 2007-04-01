@@ -1,0 +1,10 @@
+<div class="project" id="project">
+<% form_for :project, :url => project_path, 
+            :html => { :method => :put } do |form| %>
+	<%= render :partial => "form", :locals => { :form => form } %>
+	<%= submit_tag "save" %>
+<% end %>
+<%= render :partial => "blurbs/admin", :collection => @project.blurbs %>
+</div>
+<%= render :partial => "blurbs/new", 
+           :object => Blurb.new %>

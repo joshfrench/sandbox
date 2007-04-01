@@ -1,0 +1,6 @@
+<div class="blurb" id="project_<%= project.id %>">
+  <%= render :partial => "site/framedimage", 
+             :locals => { :image => project.image, :link => project_path(project.slug) } %>
+  <h3><%= link_to project.name, project_url(project.slug) %></h3>
+  <p><%= project.body %></p>
+</div>

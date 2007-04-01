@@ -1,0 +1,5 @@
+<div class="project">
+  <h2><%= @project.name %></h2>
+  <%= render :partial => "blurbs/blurb", :collection => @project.blurbs %>
+</div>
+<%= button_to "edit", edit_project_path(@project.id),:method => :get %>

@@ -1,0 +1,5 @@
+<% form_for :project, :html => { :multipart => true }, :url => projects_path do |form| %>
+  <%= render :partial => "form", :locals => { :form => form } %>
+  <%= file_field_tag "image[uploaded_data]" %>
+  <%= submit_tag "save" %>
+<% end %>

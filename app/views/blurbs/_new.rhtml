@@ -1,0 +1,8 @@
+<p class="mouse">Add blurb</p>
+<div class="blurb">
+<% form_for :blurb, :url => blurbs_path(@project.id), :html => { :id => "new_blurb", :multipart => true } do |form | %>
+  <%= render :partial => "blurbs/form", :locals => { :form => form } %>
+  <%= file_field_tag "image[uploaded_data]" %>
+  <%= submit_tag "save" %>
+<% end %>
+</div>

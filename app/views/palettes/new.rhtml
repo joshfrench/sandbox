@@ -1,0 +1,16 @@
+<h3>new palette</h3>
+<% form_for :palette, :url => palettes_path, :html => { :id => "palette_form" } do |form| -%>
+  <div><%= form.text_field :name, :id => "palette_name", 
+            :value => "Name", :class => "palette_attr",
+            :onfocus => "this.value=''" %></div>
+  <div><%= form.text_field :light, :onfocus => "this.value=''",
+            :class => "palette_attr", :value => "light" %></div>
+  <div><%= form.text_field :dark, :onfocus => "this.value=''",
+            :class => "palette_attr", :value => "dark" %></div>
+  <div><%= form.text_field :accent, :onfocus => "this.value=''",
+            :class => "palette_attr", :value => "accent" %></div>
+  <div><%= form.text_field :trim, :onfocus => "this.value=''",
+            :class => "palette_attr", :value => "trim" %></div>
+  <br/>
+  <%= submit_tag "save" %>
+<% end -%>

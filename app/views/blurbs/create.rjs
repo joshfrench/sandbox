@@ -1,0 +1,2 @@
+page.insert_html :bottom, :project, :partial => "blurbs/admin", :object => @blurb
+page.form.reset :new_blurb

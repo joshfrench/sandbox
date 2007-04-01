@@ -1,0 +1,11 @@
+** Daemonized, any open files are closed.  Look at log/mongrel.pid and log/mongrel.log for info.
+** Starting Mongrel listening at 0.0.0.0:3000
+** Starting Rails with development environment...
+** Rails loaded.
+** Loading any Rails specific GemPlugins
+** Signals ready.  TERM => stop.  USR2 => restart.  INT => stop (no restart).
+** Rails signals registered.  HUP => reload (without restart).  It might not work well.
+** Mongrel available at 0.0.0.0:3000
+** Writing PID file to log/mongrel.pid
+/Library/WebServer/WebRoot/radius/config/../app/views/site/_framedimage.rhtml:7: warning: parenthesize argument(s) for future version
+** TERM signal received.

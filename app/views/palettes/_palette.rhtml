@@ -1,0 +1,10 @@
+<div class="palette">
+  <h4><%= palette.name %></h4>
+  <% palette.colors.each do |c| -%>
+    <div class="swatch" style="background-color:#<%= c %>">&nbsp;</div>
+  <% end -%>
+  <%= link_to "EDIT", edit_palette_path(palette.id) %> | 
+  <%= link_to "DELETE", palette_path(palette.id), 
+                        :confirm => "Delete palette?",
+                        :method => :delete %><br/>
+</div>

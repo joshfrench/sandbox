@@ -1,0 +1,7 @@
+<div class="blurb" id="blurb_<%= edit.id %>" style="display:none;">
+	<% form_remote_for :blurb, :url => blurb_path(@project.id, edit.id),
+	            :html => { :method => :put } do |form | %>
+	<%= render :partial => "blurbs/form", :locals  => { :form => form } %>  
+	<%= image_submit_tag "rocknroll", :class => 'button' %>
+	<% end %>
+</div>

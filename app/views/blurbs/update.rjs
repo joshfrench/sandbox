@@ -1,0 +1,2 @@
+page.visual_effect :fade, "blurb_#{@blurb.id}"
+page.replace "blurb_#{@blurb.id}", :partial => "admin", :object => @blurb

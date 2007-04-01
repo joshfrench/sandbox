@@ -1,0 +1,10 @@
+<div class="blurb admin" id="blurb_<%= admin.id %>">
+  <%= render :partial => "site/framedimage", :locals => { :image => admin.image } %>
+  <h3><%= admin.title %></h3>
+  <p><%= admin.body %></p>
+  <%= link_to_remote 'edit', :url => edit_blurb_path(@project.id, admin.id),
+                             :method => :get %> | 
+  <%= link_to_remote 'delete', :url => blurb_path(@project.id, admin.id),
+                               :confirm => "Delete this blurb?",
+                               :method => :delete %>
+</div>

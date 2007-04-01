@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+	"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" version="-//W3C//DTD XHTML 1.1//EN" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+	<title>vitamin j</title>
+	<%= javascript_include_tag :defaults %>
+	<%= stylesheet_link_tag 'iwantapony' %>
+	<style type="text/css">
+	#header {
+		background-color: #<%= session['palette'].light %>;
+		border-bottom: 1px solid #<%= session['palette'].dark %>;
+	}
+	#header h1 {
+		color: #<%= session['palette'].dark %>;
+	}
+	#header h2 {
+		color: #<%= session['palette'].accent %>;
+	}
+	#header a {
+		color: #<%= session['palette'].dark %>;
+	}
+	#nav a.active, #nav a:hover {
+		color: #<%= session['palette'].accent %>;
+	}
+	.project h2 {
+		color: #<%= session['palette'].dark %>;
+	}
+	.blurb h3, .blurb h3 a {
+		color: #<%= session['palette'].dark %>;
+	}
+	.blurb .title {
+	    color: #<%= session['palette'].dark %>;
+	}
+	.admin a, .palette a {
+	    color: #<%= session['palette'].dark %>;
+	}
+	.button:hover {
+		background-color: #<%= session['palette'].accent %>;
+	}
+	#palette_name {
+	    color: #<%= session['palette'].dark %>;
+	}
+	</style>
+</head>
+
+<body>
+	
+	<%= render :partial => 'site/header' %>
+	<div id="main">
+		<%= @content_for_layout %>
+	</div>
+	<%= render :partial => 'site/nav' %>
+	<%= render :partial => 'site/footer' %>
+
+</body>
+</html>

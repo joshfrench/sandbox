@@ -1,0 +1,2 @@
+page.replace "blurb_#{@blurb.id}", :partial => "edit", :object => @blurb
+page.visual_effect :appear, "blurb_#{@blurb.id}"
