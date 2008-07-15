@@ -24,8 +24,3 @@ test:
 production:
   adapter: sqlite3
   database: db/dev.sqlite3
-  #adapter: mysql
-  #database: jfrench2_radiuspro
-  #username: jfrench2_dbuser
-  #password: b33omber
-  #host: vitamin-j.com
